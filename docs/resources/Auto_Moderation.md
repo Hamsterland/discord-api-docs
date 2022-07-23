@@ -79,6 +79,8 @@ value of [trigger_type](#DOCS_RESOURCES_AUTO_MODERATION/auto-moderation-rule-obj
 \* A keyword can be a phrase which contains multiple words. Wildcard symbols can be used to customize how each keyword will be matched.
 See [keyword matching strategies](#DOCS_RESOURCES_AUTO_MODERATION/auto-moderation-rule-object-keyword-matching-strategies).
 
+\* Can be omitted based on `trigger_type`. See the `Associated Trigger Types` column in [trigger metadata](#DOCS_RESOURCES_AUTO_MODERATION/auto-moderation-rule-object-trigger-metadata) to understand which `trigger_type` values require `trigger_metadata` to be set.
+
 
 ###### Keyword Preset Types
 
@@ -173,6 +175,8 @@ value of [action type](#DOCS_RESOURCES_AUTO_MODERATION/auto-moderation-action-ob
 | duration_seconds? | integer    | TIMEOUT                 | timeout duration in seconds *                  |
 
 \* Maximum of 2419200 seconds (4 weeks)
+
+\* Can be omitted based on `type`. See the `Associated Action Types` column in [action metadata](#DOCS_RESOURCES_AUTO_MODERATION/auto-moderation-action-object-action-metadata) to understand which `type` values require `metadata` to be set.
 
 
 ### Auto Moderation Permission Requirements
